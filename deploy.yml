@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: vgrow/php:v1
+          image: shazebali7/php:v1
           ports:
             - containerPort: 8000
           env:
