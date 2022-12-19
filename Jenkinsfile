@@ -8,12 +8,12 @@ pipeline {
         }
         stage('building Image') {    
             steps {
-               sh 'docker build . --no-cache -t vgrow/php:v1'
+               sh 'docker build . --no-cache -t vgrow/php:latest'
             }
         }
         stage('pushing image to hub') { 
             steps {
-               sh ' docker  login --username  shazebali7 --password "Shazeb@li7" && docker push vgrow/php:v1 ' 
+               sh ' docker  login --username  shazebali7 --password "Shazeb@li7" && docker push vgrow/php:latest' 
             }
         }
         stage('Deploying changes') { 
