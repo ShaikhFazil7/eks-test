@@ -13,7 +13,7 @@ pipeline {
         }
         stage('pushing image to hub') { 
             steps {
-               sh ' docker  login --username  shazebali7 --password "Shazeb@li7" && docker push nadeem9975/php:v1 ' 
+               sh ' docker  login --username  saadmd29 --password "Azian@123" && docker push nadeem9975/php:v1 ' 
             }
         }
         stage('Deploying changes') { 
